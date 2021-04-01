@@ -42,12 +42,11 @@
   function firstBtnedit() {
     window.ReactNativeWebView.postMessage('firstIsEdit');
   }
-  window.addEventListener('message', function(e) {
-const message = e.data;//字符串类型
-  console.log('WebView message:',message);
-// alert(message);
-})
-  
+  window.addEventListener('message', function (e) {
+    const message = e.data; //字符串类型
+    // console.log('WebView message:', message);
+    alert(message);
+  })
 </script>
 <style>
   html,
